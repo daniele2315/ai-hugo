@@ -1,7 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opiniões</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
 
-<section id="opiniao">
-    <h2 style="text-align:center; color:#800080;">✨ Opiniões de Clientes</h2>
+    nav {
+      background-color: #800080;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #opiniao {
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .opiniao {
+      background: white;
+      border-left: 5px solid #ba55d3;
+      margin: 15px auto;
+      padding: 15px;
+      max-width: 700px;
+      border-radius: 8px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .opiniao strong {
+      color: #800080;
+    }
+
+    .logo-container img {
+      max-width: 200px;
+      margin-bottom: 30px;
+    }
+
+    .abas-rodape {
+      margin-top: 50px;
+      font-weight: bold;
+    }
+
+    .abas-rodape a {
+      color: #800080;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .abas-rodape a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="sitediferente" onclick="mostrarAba('inicio')">Início</a>
+    <a href="sobre.html" onclick="mostrarAba('sobre')">Sobre Nós</a>
+    <a href="opiniao.html" onclick="mostrarAba('opiniao')">Opiniões</a>
+    <a href="contato.html" onclick="mostrarAba('contato')">Contato</a>
+  </nav>
+
+  <section id="opiniao">
+  
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo da empresa">
+    </div>
+
+    <h2 style="color:#800080;">✨ Opiniões de Clientes</h2>
+
     <div class="opiniao"><strong>Juliana M.:</strong> "Simplesmente amei os produtos! Meu batom chegou rapidinho e a qualidade é ótima!"</div>
     <div class="opiniao"><strong>Ana Beatriz:</strong> "O perfume floral é maravilhoso, e o atendimento foi incrível. Comprarei de novo com certeza."</div>
     <div class="opiniao"><strong>Fernanda L.:</strong> "Minha pele melhorou muito com o creme que comprei, estou apaixonada!"</div>
+
   </section>
+
+</body>
+</html>
