@@ -427,6 +427,30 @@ function validarLogin() {
 
   // Exibir os produtos ao carregar a página
   mostrarProdutos();
+  function exibirProdutos(lista) {
+  const container = document.getElementById('lista-produtos');
+  container.innerHTML = '';
+  lista.forEach(produto => {
+    const div = document.createElement('div');
+    div.classList.add('produto');
+    div.innerHTML = `
+      <img src="${produto.imagem}" alt="${produto.nome}">
+      <div class="nome">${produto.nome}</div>
+      <div class="preco">R$ ${produto.preco.toFixed(2)}</div>
+      <button class="add-carrinho" onclick="adicionarAoCarrinho('${produto.nome}', ${produto.preco})">Adicionar ao Carrinho</button>
+    `;
+    container.appendChild(div);
+  });
+}
+
+function buscarProduto() {
+  const termo = document.getElementById('inputBusca').value.toLowerCase();
+  const filtrados = listaProdutos.filter(p => p.nome.toLowerCase().includes(termo));
+  exibirProdutos(filtrados);
+}
+
+// Exibe todos os produtos inicialmente
+exibirProdutos(listaProdutos);
 </script>
 
 </body>
