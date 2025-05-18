@@ -1,16 +1,104 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, #ba55d3, #32cd32, #ff69b4);
+      color: white;
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+
+    nav {
+      background: #ffe6f2;
+      padding: 5px 10px;
+      text-align: center;
+      position: sticky;
+      top: 60px;
+      z-index: 999;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #800080;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 0.9em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ba55d3;
+    }
+    section#sobre {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section#sobre h2 {
+  margin-bottom: 10px;
+}
+
+section#sobre p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1em;
+  color: #333;
+}
+  </style>
 </head>
 <body>
-    
+
+  <header>
+    <div class="logo">BN</div>
+    <div class="carrinho" onclick="toggleCarrinho()">
+      <i class="fas fa-shopping-cart"></i>
+    </div>
+  </header>
+
+  <nav>
+    <a href="sitediferente" onclick="mostrarAba('inicio')">Início</a>
+    <a href="sobre.html" onclick="mostrarAba('sobre')">Sobre Nós</a>
+    <a href="opinião.html" onclick="mostrarAba('opiniao')">Opiniões</a>
+    <a href="contato.html" onclick="mostrarAba('contato')">Contato</a>
+  </nav>
+  <section id="sobre">
+    <h2 style="text-align:center; color:#800080; margin-bottom: 10px;">💜 Sobre Nós</h2>
+    <p style="text-align:center; max-width:600px; margin: 0 auto;">
+      Na Beleza Natural, acreditamos na força da beleza autêntica. Trabalhamos com cosméticos de alta qualidade para realçar o que você tem de melhor. Nossa missão é oferecer produtos que cuidam de sua pele, cabelo e autoestima!
+    </p>
+  </section>
+  
+  
 </body>
 </html>
-<section id="sobre">
-    <h2 style="text-align:center; color:#800080;">💜 Sobre Nós</h2>
-    <p style="text-align:center; max-width:800px; margin:auto;">Na Beleza Natural, acreditamos na força da beleza autêntica. Trabalhamos com cosméticos de alta qualidade para realçar o que você tem de melhor. Nossa missão é oferecer produtos que cuidam de sua pele, cabelo e autoestima!</p>
-  </section>
