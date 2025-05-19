@@ -13,17 +13,45 @@
       background-color: #f7f7f7;
     }
 
-    nav {
-      background-color: #800080;
-      padding: 10px;
-      text-align: center;
+    header {
+      background: linear-gradient(to right, #ba55d3, #32cd32, #ff69b4);
+      color: white;
+      padding: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
+    nav {
+     background: #ffe6f2;
+      padding: 5px 10px; /* Reduzi o padding */
+      text-align: center;
+      position: sticky;
+      top: 80px;
+      z-index: 999;
+    }
     nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
+      margin: 0 10px; /* Diminui a margem entre os itens */
+      color: #800080;
       font-weight: bold;
+      text-decoration: none;
+      font-size: 0.9em; /* Reduzi o tamanho da fonte */
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ba55d3;
+    }
+
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5em; /* Diminui o tamanho da fonte */
+      font-weight: bold;
+      color: white;
+      margin-left: 5px;
     }
 
     #opiniao {
@@ -46,11 +74,7 @@
       color: #800080;
     }
 
-    .logo-container img {
-      max-width: 200px;
-      margin-bottom: 30px;
-    }
-
+   
     .abas-rodape {
       margin-top: 50px;
       font-weight: bold;
@@ -95,63 +119,7 @@
     <div class="opiniao"><strong>Fernanda L.:</strong> "Minha pele melhorou muito com o creme que comprei, estou apaixonada!"</div>
   </section>
  
-  <style>#opiniao{
-    padding: 100px;
-    }
-    
-    header {
-         background: linear-gradient(to right, #ba55d3, #32cd32, #ff69b4);
-          color: white;
-          padding: 5px 15px; 
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          position: sticky;
-          margin-top: -8px;
-          z-index: 1000;
-          padding: 10px;
-          padding-left: 10px;
-          
-    
-    }
-    
-    
-    .logo {
-          font-family: 'Playfair Display', serif;
-          font-size: 1.5em; /* Diminui o tamanho da fonte */
-          font-weight: bold;
-          color: white;
-          .logo img {
-          width: 40px;
-          height: 40px;
-          margin-right: 10px;
-        }
-        .logo img {
-          width: 40px;
-          height: 40px;
-          margin-right: 10px;
-        }
-        }
-    
-        nav {
-         background: #ffe6f2;
-          padding: 5px 10px; /* Reduzi o padding */
-          text-align: center;
-          position: sticky;
-          top: 80px;
-          z-index: 999;
-        }
-        nav a {
-          margin: 0 10px; /* Diminui a margem entre os itens */
-          color: #800080;
-          font-weight: bold;
-          text-decoration: none;
-          font-size: 0.9em; /* Reduzi o tamanho da fonte */
-          transition: color 0.3s;
-        }
-        nav a:hover {
-          color: #ba55d3;
-        }</style>
+ 
 
 </body>
 </html>
