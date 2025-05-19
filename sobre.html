@@ -21,7 +21,7 @@
     header {
       background: linear-gradient(to right, #ba55d3, #32cd32, #ff69b4);
       color: white;
-      padding: 10px 15px;
+      padding: 6px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -32,34 +32,40 @@
 
     .logo {
       font-family: 'Playfair Display', serif;
-      font-size: 1.5em;
+      font-size: 2.21em; /* Diminui o tamanho da fonte */
       font-weight: bold;
       color: white;
-      display: flex;
-      align-items: center;
+      margin-left: 10px;
     }
 
+
+    .rosinha{
+      background: #ff69b4;
+      background-color: #ff69b4;
+      color: #ffe6f2;
+
+    }
+    
     nav {
-      background: #ffe6f2;
-      padding: 5px 10px;
+     background: #ffe6f2;
+      padding: 5px 10px; /* Reduzi o padding */
       text-align: center;
       position: sticky;
-      top: 60px;
+      top: 80px;
       z-index: 999;
     }
-
     nav a {
-      margin: 0 10px;
+      margin: 0 10px; /* Diminui a margem entre os itens */
       color: #800080;
       font-weight: bold;
       text-decoration: none;
-      font-size: 0.9em;
+      font-size: 0.9em; /* Reduzi o tamanho da fonte */
       transition: color 0.3s;
     }
-
     nav a:hover {
       color: #ba55d3;
     }
+   
     section#sobre {
   padding: 40px 20px;
   text-align: center;
@@ -79,12 +85,16 @@ section#sobre p {
 </head>
 <body>
 
+  <div class="rosinha">
   <header>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <div class="logo">BN</div>
     <div class="carrinho" onclick="toggleCarrinho()">
       <i class="fas fa-shopping-cart"></i>
     </div>
   </header>
+
+  </div>
 
   <nav>
     <a href="sitediferente" onclick="mostrarAba('inicio')">Início</a>
