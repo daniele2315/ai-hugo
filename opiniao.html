@@ -1,0 +1,127 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opiniões</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+
+    header {
+      background: linear-gradient(to right, #ba55d3, #32cd32, #ff69b4);
+      color: white;
+      padding: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+     background: #ffe6f2;
+      padding: 5px 10px; /* Reduzi o padding */
+      text-align: center;
+      position: sticky;
+      top: 80px;
+      z-index: 999;
+    }
+    nav a {
+      margin: 0 10px; /* Diminui a margem entre os itens */
+      color: #800080;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 0.9em; /* Reduzi o tamanho da fonte */
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ba55d3;
+    }
+
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5em; /* Diminui o tamanho da fonte */
+      font-weight: bold;
+      color: white;
+      margin-left: 5px;
+    }
+
+    #opiniao {
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .opiniao {
+      background: white;
+      border-left: 5px solid #ba55d3;
+      margin: 15px auto;
+      padding: 15px;
+      max-width: 700px;
+      border-radius: 8px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .opiniao strong {
+      color: #800080;
+    }
+
+   
+    .abas-rodape {
+      margin-top: 50px;
+      font-weight: bold;
+    }
+
+    .abas-rodape a {
+      color: #993f99;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .abas-rodape a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+      <div class="logo">BN</div>
+    </div>
+    <div class="carrinho" onclick="toggleCarrinho()">
+      <i class="fas fa-shopping-cart"></i>
+    </div>
+  </header>
+
+  <nav>
+    <a href="sitediferente.html" onclick="mostrarAba('inicio')">Início</a>
+    <a href="sobre.html" onclick="mostrarAba('sobre')">Sobre Nós</a>
+    <a href="opiniao.html">Opiniões</a>
+    <a href="contato.html" onclick="mostrarAba('contato')">Contato</a>
+  </nav>
+
+  <section id="opiniao">
+  
+    <h2 style="color:#a51fa598;">✨ Opiniões de Clientes</h2>
+
+    <div class="opiniao"><strong>Juliana M.:</strong> "Simplesmente amei os produtos! Meu batom chegou rapidinho e a qualidade é ótima!"</div>
+    <div class="opiniao"><strong>Ana Beatriz:</strong> "O perfume floral é maravilhoso, e o atendimento foi incrível. Comprarei de novo com certeza."</div>
+    <div class="opiniao"><strong>Fernanda L.:</strong> "Minha pele melhorou muito com o creme que comprei, estou apaixonada!"</div>
+  </section>
+ 
+ 
+
+</body>
+</html>
